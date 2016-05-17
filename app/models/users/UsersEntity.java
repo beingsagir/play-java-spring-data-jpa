@@ -3,11 +3,11 @@ package models.users;
 import javax.persistence.*;
 
 /**
- * Created by Sagir on 07-05-2016.
+ * Created by Sagir on 17-05-2016.
  */
 @Entity
-@Table(name = "new_table", schema = "play-spring-data-jpa", catalog = "")
-public class NewTableEntity {
+@Table(name = "users", schema = "play-spring-data-jpa", catalog = "")
+public class UsersEntity {
     private int id;
     private String email;
     private String password;
@@ -47,7 +47,7 @@ public class NewTableEntity {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        NewTableEntity that = (NewTableEntity) o;
+        UsersEntity that = (UsersEntity) o;
 
         if (id != that.id) return false;
         if (email != null ? !email.equals(that.email) : that.email != null) return false;

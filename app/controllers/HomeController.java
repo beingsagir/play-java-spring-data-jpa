@@ -1,10 +1,6 @@
 package controllers;
 
-import com.google.inject.Inject;
-import models.users.NewTableEntity;
 import play.mvc.Controller;
-import play.mvc.Result;
-import repositories.UserRepositories;
 
 /**
  * This controller contains an action to handle HTTP requests
